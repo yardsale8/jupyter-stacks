@@ -1,3 +1,3 @@
-FROM jupyter/all-spark-notebook:17aba6048f44
+FROM jupyter/scipy-notebook:f646d2b2a3af
 
-RUN pip install --no-cache-dir vdom==0.5
+RUN pip install --no-cache-dir pyensae
