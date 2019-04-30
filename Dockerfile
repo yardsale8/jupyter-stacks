@@ -48,6 +48,8 @@ RUN conda install --quiet --yes \
     conda clean -tipsy && \
     fix-permissions $CONDA_DIR
 
+USER root
+
 # You can use rsession from rstudio's desktop package as well.
 ENV RSTUDIO_PKG=rstudio-server-1.0.136-amd64.deb
 
@@ -61,6 +63,7 @@ rm -rf /var/lib/apt/lists/*
 # Fix for devtools https://github.com/conda-forge/r-devtools-feedstock/issues/4
 RUN ln -s /bin/tar /bin/gtar
 
+USER $NB_UID
 
 RUN pip install git+https://github.com/jupyterhub/jupyter-rsession-proxy
 
