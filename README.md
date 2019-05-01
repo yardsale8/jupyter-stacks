@@ -2,6 +2,8 @@
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/yardsale8/jupyter-stacks/master)
 
+[[RStudio](https://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/yardsale8/jupyter-stacks/master?urlpath=rstudio)
+
 Sometimes you just want to inherit from one of the pre-built images
 maintained by the Jupyter Project's [Docker Stacks](https://github.com/jupyter/docker-stacks),
 and perhaps add just an extra library or two. This example shows you how
