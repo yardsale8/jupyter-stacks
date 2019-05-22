@@ -9,6 +9,6 @@ RUN chown -R ${NB_UID} ${HOME}
 USER $NB_UID
 
 # Additional python library
-#RUN pip install --no-cache-dir pyensae
+RUN pip install --no-cache-dir simplegeneric
 
 #USER ${NB_USER}
