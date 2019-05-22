@@ -1,4 +1,4 @@
-FROM jupyter/datascience-notebook:f286528
+FROM jupyter/datascience-notebook:abdb27a
 
 USER $NB_UID
 # Make sure the contents of our repo are in ${HOME}
